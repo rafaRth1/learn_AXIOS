@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./normalize.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Api Weather and Geolocation</title>
+	</head>
+	<body>
+		<main>
+			<section class="section_box-climate">
+				<div class="box-climate container">
+					<div class="insert-place">
+						<input type="text" class="places" name="places" id="country" placeholder="Country" value="" />
+
+						<div class="content-error"></div>
+
+						<input type="submit" id="search-country" value="Search Country" />
+					</div>
+
+					<div class="box__climate-result container">
+						<h1>Current weather</h1>
+
+						<div class="box-country name-weather">
+							<span>Country: </span>
+							<span class="country"></span>
+						</div>
+
+						<div class="box-region name-weather">
+							<span>Region: </span>
+							<span class="region"></span>
+						</div>
+
+						<div class="box-name name-weather">
+							<span>Name: </span>
+							<span class="name"></span>
+						</div>
+
+						<div class="icon-climate"></div>
+						<div class="name-climate">
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="./app.js" type="module"></script>
+	</body>
+</html>

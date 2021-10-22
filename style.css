@@ -1,0 +1,124 @@
+/*---- Root colors ----*/
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+
+:root {
+	--dark-blue: #002855;
+	--white: #ffffff;
+	--bluish: #00769a;
+	--semi-azulino: #004665;
+}
+
+/*---- Root fonts ----*/
+:root {
+	--font-primary: "JetBrains Mono", monospace;
+	--font-primary-size-l: 300;
+	--font-primary-size-R: 400;
+	--font-primary-size-M: 500;
+	--font-primary-size-SB: 600;
+	--font-primary-size-B: 700;
+}
+
+body {
+	background-color: var(--dark-blue);
+	height: 100%;
+}
+
+main {
+	height: 100%;
+}
+
+/*---- Defaullt Value----*/
+
+.container {
+	margin: 0 auto;
+	max-width: 120rem;
+}
+
+.section_box-climate {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.box-climate {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+
+.insert-place {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.insert-place .places {
+	width: 20rem;
+	padding: 1rem;
+	outline: none;
+	color: var(--white);
+	font-size: 1.5rem;
+	font-family: var(--font-primary);
+	text-transform: capitalize;
+	font-weight: 600;
+	background-color: var(--bluish);
+	border: none;
+	border-radius: 3rem;
+}
+
+#search-country {
+	padding: 1rem;
+	font-size: 1.5rem;
+	font-family: var(--font-primary);
+	border-radius: 3rem;
+	cursor: pointer;
+}
+
+.insert-place .places::placeholder {
+	color: var(--white);
+	font-weight: normal;
+	opacity: 0.2;
+}
+
+.name-weather {
+	font-size: 2.5rem;
+	font-family: var(--font-primary);
+	color: var(--white);
+	padding: 1rem;
+	font-weight: var(--font-primary-size-SB);
+}
+
+.country,
+.region,
+.name {
+	font-size: 2rem !important;
+}
+
+.box__climate-result {
+	text-align: center;
+}
+
+.name-climate {
+	font-size: 1.4rem;
+	color: var(--white);
+	font-family: var(--font-primary);
+}
+
+.box__climate-result h1 {
+	font-family: var(--font-primary);
+	font-weight: var(--font-primary-size-B);
+	font-size: 5rem;
+	color: var(--white);
+}
+
+.errorMessage {
+	font-size: 1rem;
+	font-family: var(--font-primary);
+	color: red;
+	text-align: center;
+}

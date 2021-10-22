@@ -1,0 +1,11 @@
+{
+	"name": "axios_apis",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "Rafael Alvarez",
+	"license": "MIT",
+	"type": "module",
+	"dependencies": {
+		"axios": "^0.23.0"
+	}
+}
