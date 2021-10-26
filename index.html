@@ -18,6 +18,8 @@
 		<main>
 			<section class="section_box-climate">
 				<div class="box-climate container">
+					<span class="sub-title">Current Wather</span>
+
 					<div class="insert-place">
 						<input type="text" class="places" name="places" id="country" placeholder="Country" value="" />
 
@@ -27,20 +29,18 @@
 					</div>
 
 					<div class="box__climate-result container">
-						<h1>Current weather</h1>
-
 						<div class="box-country name-weather">
-							<span>Country: </span>
+							<label for="country">Country: </label>
 							<span class="country"></span>
 						</div>
 
 						<div class="box-region name-weather">
-							<span>Region: </span>
+							<label for="region">Region: </label>
 							<span class="region"></span>
 						</div>
 
 						<div class="box-name name-weather">
-							<span>Name: </span>
+							<label for="name">Name: </label>
 							<span class="name"></span>
 						</div>
 
@@ -48,6 +48,29 @@
 						<div class="name-climate">
 							<span></span>
 						</div>
+
+						<span class="loader"></span>
+					</div>
+				</div>
+
+				<div class="air-quality">
+					<span class="sub-title">Air Quality</span>
+
+					<div class="carbon-monoxide box_date_air">
+						<label for="air-quality">Carbon Monoxide: </label>
+						<span class="date-air-quality"></span>
+					</div>
+					<div class="ozone box_date_air">
+						<label for="ozone">Ozone: </label>
+						<span class="date-ozone"></span>
+					</div>
+					<div class="nitrogen-dioxide box_date_air">
+						<label for="nitrogen-dioxide">Nitrogen dioxide: </label>
+						<span class="date-nitrogen-dioxide"></span>
+					</div>
+					<div class="sulphur-dioxide box_date_air">
+						<label for="air-quality">Sulphur dioxide: </label>
+						<span class="date-sulphur-dioxide"></span>
 					</div>
 				</div>
 			</section>
